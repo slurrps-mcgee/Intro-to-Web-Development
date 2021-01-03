@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/* CSS Document */
+/*Kenneth Lamb*/
+
+body
+{
+	background-color: #66FF99;
+}
+
+h1, h2
+{
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h1
+{
+	font-size: 36pt;
+	color: #3300FF;
+}
+
+h2
+{
+	font-size: 26pt;
+	color: #6666FF;
+	background-color: yellow;
+	font-weight: bold;
+}
+
+p
+{
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	font-size: 18pt;
+	color: #3300CC;
+	margin-left: 50px;
+	/*This causes the first letter of every word to be capitolized*/
+	text-transform: capitalize;
+	
+}
+
+

@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+
+body
+{
+	background-color:dimgrey;
+	
+}
+
+h2
+{
+	color:lightblue;
+	
+}
+
+p:first-letter
+{
+	color:lightcyan;
+	font-size: 40px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-style:normal;
+	
+	
+}
+
+p
+{
+	font-size:18px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	border:thin;
+	border-style:dotted;
+	padding: 10px;
+	color:lightblue;
+	
+	
+	
+}
+
+p:first-line
+{
+	font-variant: small-caps;
+	color:lightgray;
+	
+}
+
+.classW
+{
+	font-weight: 900;
+	padding:4px;
+	text-shadow: 4px 5px 6px #af91c4;
+	
+}
+
+.box
+{
+	border:medium;
+	border-style:solid;
+	border-color:aliceblue;
+	text-align:center;
+	color:lightgrey;
+	box-shadow: 5px 5px silver;
+	
+}

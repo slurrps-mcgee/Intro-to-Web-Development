@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+
+body
+{
+	background-color: #F5E28D;
+	
+}
+h1,h2
+{
+	color: #ff6161;
+	font-family: Times New Roman, Garamond, Librarian;
+	
+}
+
+hr
+{
+	width: 70%;
+	color: #227dab;
+	
+}
+
+p
+{
+	color: #227dab;
+	font-family: arial, gill sans, technical;
+	
+}
+
+footer
+{
+	color: #ff6161;
+}

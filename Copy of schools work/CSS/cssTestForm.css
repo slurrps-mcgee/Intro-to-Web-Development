@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+/*Fall Formatting*/
+
+h2
+{
+	color: orangered;
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif"
+	
+}
+
+ul
+	{
+		color:blue;
+		font-size: 20px;
+		font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	}
+	
+	p
+	{
+		text-align: center;
+		
+	}
+	
+	ol
+	{
+		text-align: center;
+		
+	}

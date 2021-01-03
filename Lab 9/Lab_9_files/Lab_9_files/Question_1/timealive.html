@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html>
+
+	<!--  Author:  Kenneth Lamb
+	  Date:    11-21-2019
+	  
+	  Purpose:  This program calculates the days, hours, minutes, and seconds you have been alive based on the age of the user input then outputs that to the screen.      -->
+
+<head>
+
+	<title> Time alive! </title>
+
+	<link href="timeAliveFormat.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+<div align="center">
+	<h1>How Long Have You Been Alive?</h1>
+</div>
+
+<script language="JavaScript">
+	//Declare Variables
+	
+	const intYearsToDays = 365; //Constant of how many days in year
+	const intDaysToHours = 24; //Constant of how many hours in a day
+	const intHoursToMinutes = 60; //Constant of how many minutes in an hour
+	const intMinutesToSeconds =60; // Constant of how many seconds in a minute
+	
+	var age; //Stores the user input of their age
+	var days; //Stores the conversion of the years to days
+	var hours; //Stores the conversion of the days to hours
+	var minutes; //Stores the conversion of the hours to minutes
+	var seconds; //Stores the conversion of the minutes to seconds
+	
+	
+	//Gather the user input and set it to the age variable
+	age = window.prompt("Please input your age")
+	
+	//Convert the user input age to an integer
+	age = parseInt(age);
+	
+	
+	//Preform Calculations
+	days = intYearsToDays * age; //Converts the years into days
+	hours = days * intDaysToHours; //Converts the days into hours
+	minutes = hours * intHoursToMinutes; //Converts the hours into minutes
+	seconds = minutes * intMinutesToSeconds; //Converts minutes into seconds
+	
+	
+	//Output results to screen
+	document.write("You are " + age + "years old, which means you have been alive for at least")
+	
+	document.write("<br/>")
+
+	document.write(days + " days")
+	
+	document.write("<br/>")
+	
+	document.write(hours + " hours,")
+	
+	document.write("<br/>")
+	
+	document.write(minutes + " minutes, or")
+	
+	document.write("<br/>")
+	
+	document.write(seconds + " Seconds!")
+	
+	document.write("<br/>")
+	document.write("<br/>")
+	
+	document.write("Can you believe that!?")
+
+	//   End of JavaScript to be hidden from incompatible browsers -->
+</script>
+
+</body>
+
+</html>

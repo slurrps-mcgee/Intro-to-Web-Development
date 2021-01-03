@@ -1,0 +1,104 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+	h1
+	{
+		color: #CCCCCC;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:48px;
+		text-align:center;
+
+	}
+
+	h3
+	{
+		color: #f5f5f5;
+		font-size:35px;
+		font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+
+	}
+
+	body
+	{
+		background-color: #262626;
+
+
+	}
+
+	ol, ul
+	{
+		color: #f5f5f5;
+		font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+		font-size:25px;
+		font-style:oblique;
+
+	}
+
+	p
+	{
+		color: #f5f5f5;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-size: 20px;
+		border-style:dotted;
+		border: thin;
+		padding:10px;
+		margin:10px;
+		
+		
+
+
+	}
+
+	a
+	{
+		color: #c85fd9;
+	font-size:20px;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif"
+	
+	}
+
+table
+{
+	
+	width: 100%;
+	
+	
+}
+
+#tableTitle th,tr, td
+{
+	border: 2px solid #dddddd;
+	border-radius: 15px;
+	padding: 8px;
+	color:#f5f5f5;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	
+}
+
+#tableTitle td
+{
+	text-align: center;
+	font-size: 20px;
+	background-color:#4a4a4a;
+	
+	
+}
+
+#tableTitle th
+{
+	background-color: #22818a;
+	font-weight: bold;
+	
+}
+
+.header
+	{
+		text-align:center;
+		text-shadow: 5px 3px 15px dimgrey;
+		
+		
+	}
+
+
+

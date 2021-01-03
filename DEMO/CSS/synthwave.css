@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Vollkorn+SC&display=swap');
+p
+{
+	color:#bd14db;
+	font-family: 'Vollkorn SC', serif;
+	font-size: 18px;
+	
+	border-style:dotted;
+	padding: 15px;
+	margin: 10px;
+	border:thin;
+	border-color:blueviolet;
+	
+}
+
+body
+{
+	background-color:#489fc2;
+}
+
+address
+{
+	padding:10px;
+	border-style:dotted;
+	
+}

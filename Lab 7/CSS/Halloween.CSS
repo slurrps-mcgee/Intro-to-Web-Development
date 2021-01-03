@@ -1,0 +1,148 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*tag properties*/
+body
+{
+	background-image: linear-gradient(black, black, black, orange, darkorange);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+}
+h1,h2,h3,h4,h5,h6
+{
+	color: #E08322;
+	text-align:center;
+	
+}
+
+p
+{
+	text-align: center;
+	font-size: 26px;
+	padding: 10px;
+	color: #E08322;
+	text-shadow: 1px 1px 0px black;
+	
+}
+
+ul,ol
+{
+	background-color: rgba(54,51,45,.65);
+	color: #E57200;
+	text-shadow: 1px 1px 0px black;
+	border-radius: 25px;
+	padding-top: 5px;
+	
+}
+
+li
+{
+	
+	font-size: 25px;
+	
+}
+
+blockquote
+{
+	font-size: 25px;
+	color:#E57200;
+	border: thin;
+	border-style: dashed;
+	text-shadow: 1px 1px 0px black;background-color: rgba(54,51,45,.65);
+	border-radius: 25px;
+}
+
+table
+{
+	background-color: rgba(54,51,45,.65);
+	border-radius: 25px;
+}
+
+/*Header properties*/
+/*classes*/
+.header h1
+{
+	text-align: left;
+	color: #E08322;
+	font-size: 40px;
+	top: 10px;
+	left: 10px;
+}
+
+.header img
+{
+	float: left;
+	width: 100px;
+}
+
+/*Button and table properties*/
+.button
+{
+
+	background-image:radial-gradient(black,darkorange);
+  	border:none;
+	border-radius: 15px;
+  	color: #e6e6e6;
+  	padding: 15px 32px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 16px;
+  	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.buttonHeaders
+{
+	color:#E08322;
+	text-shadow: -1px -1px 0 black, -1px -1px 0 black, -1px -1px 0 black, -1px -1px 0 black;
+}
+
+.buttonTable th, td
+{
+	column-width: 300px;
+}
+
+.pOutline
+{
+	border:thin;
+	border-style: dotted;
+	border-color: #E08322;
+	background-color: rgba(54,51,45,.65);
+	border-radius: 25px;
+}
+
+/*Greeting ID*/
+/*ID's*/
+#greeting
+{
+	text-align: center;
+	color: #E08322;
+	font-size: 40px;
+	text-decoration: overline;
+	text-shadow: 1px 1px 80px darkorange;
+
+}
+
+#greetingParagraph::first-letter
+{
+	font-size: 80px;
+}
+
+#tableCaption
+{
+	text-align: center;
+	color: #E08322;
+	font-size: 50px;
+	font-weight: bold;
+	text-decoration: underline;
+	text-shadow: 3px 3px 10px black;
+	
+}
+
+#emailFormat
+{
+	font-size: 25px;
+	color: black;
+}

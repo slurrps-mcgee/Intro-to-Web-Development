@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+      <!-- Author: Kenneth Lamb
+	   Date: 12/05/19
+	   Purpose:  This program will take the price of a specific item and offer a 20% discount off the 
+		     final price then it will calculate the 7% tax  and print the Final cost of an Item   -->
+
+<head>
+<title>Find Item Cost</title>
+</head>
+
+<body>
+
+<h1 style="text-align:center;"> Welcome to Kenneths's Bargain Bin </h1>
+<br /> 
+<br />
+
+<h3 align="center">This page allows you to calculate whether you will have any savings
+on your upcoming purchase with us.  We first need to ask you for some information, and then
+we'll calculate the cost of your purchase. <br />
+<br /></h3>
+
+<script language="JavaScript">
+    //Declare Variables
+    var itemPrice;
+	var itemsPrice
+    var haveCoupon;
+    var finalPrice;
+    var reduction;
+	var subTotal;
+	var tax;
+
+    var COUPON_DISCOUNT = .2;
+    var SALES_TAX = .07;
+
+    //gather information from the user
+    itemPrice = window.prompt("Please enter in the items price. (Do NOT include the $ sign)");
+    itemsPrice = parseFloat(itemPrice);
+
+    haveCoupon = window.prompt("Do you have a coupon (yes or no)", "no");
+
+    //Calculate final cost
+    if (haveCoupon == "no")
+	{
+		subTotal = itemPrice;
+		tax = subTotal * SALES_TAX
+		finalPrice = itemsPrice + tax;
+	}
+        
+    else 
+	{
+        reduction = itemsPrice * COUPON_DISCOUNT;
+		subTotal = itemsPrice - reduction;
+		tax = subTotal * SALES_TAX;
+        finalPrice = subTotal + tax;
+    }
+	
+	var total = finalPrice.toFixed(2);
+	var taxTotal = tax.toFixed(2)
+	
+    //write to screen
+    document.write("<h3>The final price of the item will be $");
+    document.write(total);
+    document.write("<br />");
+
+    if (haveCoupon == "yes")
+	{
+		document.write("Congradulations you saved $" + reduction + " with your coupon. <br />");
+		document.write("Your sales tax charged is $" + taxTotal);
+	}
+        
+    else
+	{
+		document.write("This does not include a coupon discount. <br />");
+		document.write("Your sales tax charged is $" + taxTotal);
+	}
+        
+
+
+
+
+</script>
+</body>
+</html>

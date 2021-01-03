@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+/*Summer Formatting*/
+
+h2
+{
+	color: orange;
+	font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif"
+	
+}
+
+ul
+	{
+		color:darkblue;
+		font-size: 20px;
+		font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	}
+	
+	p
+	{
+		text-align: center;
+		
+	}
+	
+	ol
+	{
+		text-align: center;
+		
+	}

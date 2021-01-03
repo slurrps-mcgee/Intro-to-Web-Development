@@ -1,0 +1,85 @@
+<html>
+      <!-- Author:  Captain Stubing 
+	   Date: 10/22
+	   Purpose:  This program asks the user what type of cabin they would like,
+                     single or double occupancy, whether they want a porthole or not,
+		     and whether they're booking their trip early or not.  Based on
+		     these answers, this program then calculates the final cost of
+		     the cruise for the customer.   -->
+
+<head>
+<title>Find Cruise Price</title>
+</head>
+
+<body>
+
+   <!-- Print intro to web page and purpose for customer -->
+<h1 style="text-align:center;">Welcome to the Cruise Price Calculator</h1>
+<h3>This page allows you to calculate whether you will have any additional fees or any savings
+on your upcoming cruise with us.  We first need to ask you for some information, and then
+we'll calculate the cost of your cruise. <br />
+<br />
+Here's what you need to tell us: <br />
+<br />
+1) Do you want a double occupancy cabin ($700) or a single occupancy cabin ($1200)?<br />
+2) Would you like to have a porthole (window) in your cabin? <em>(There's an additional fee of $150 for this.)</em> <br />
+3) Are you booking your trip 60 or more days in advance? <em>(There's a 15% discount if you are!)</em><br />
+<br />
+</h3>
+
+
+<script language="JavaScript">
+   <!--  JavaScript code to hide from incompatible browser
+
+   // Declare variables
+   var portholeCost=150; // additional cost of cabin if customer wants porthole
+   var discountRate=.15  // discount rate (15%) if customer books early
+   var regularPrice;	 // regular cost of interior cabin
+   var wantPorthole;     // does customer want a cabin with a porthole: yes or no
+   var bookEarly;	 // is customer booking trip early: yes or no
+   var reduction;	 // discount if customer is booking early
+   var finalPrice;	 // final cost of the cruise
+
+   // Get information from customer
+   regularPrice = window.prompt("Please enter regular cost of cabin ($700=Double, $1200=Single)","Don't include $ sign");
+   regularPrice = parseInt(regularPrice);
+
+   wantPorthole = window.prompt("Would you like a cabin with a porthole? (yes or no)","yes");
+
+   bookEarly = window.prompt("Are you booking your trips 60 or more days in advance? (yes or no)","no");
+
+   // Calculate final ticket price for cruise
+   if (wantPorthole == "yes")
+	finalPrice = regularPrice + portholeCost;
+   else
+	finalPrice = regularPrice;
+
+
+   if (bookEarly == "yes")   {
+	reduction = finalPrice * discountRate;
+	finalPrice = finalPrice - reduction;
+   }
+
+   // Print results to the screen
+   document.write("<h3>The final cost of your ticket will be $");
+   document.write(finalPrice);
+   document.write(". <br />");
+
+   if (wantPorthole == "yes")
+	document.write("This price includes the fee for a porthole. <br />");
+   if (bookEarly == "yes")
+	document.write("This price includes the discount for booking early. <br />");
+
+   document.write("<br /> </h3>");
+
+   // End of JavaScript code to hide -->
+</script>
+
+
+
+<h2 style="text-align:center;">Thanks for visiting our page, we hope you enjoy your cruise with us!</h2>
+<h4 style="text-align:center;"><font color="red">Hit the "Refresh" button on your browser to run again!</font></h4>
+
+</body>
+
+</html>

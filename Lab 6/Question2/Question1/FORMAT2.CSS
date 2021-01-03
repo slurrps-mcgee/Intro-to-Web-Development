@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+/*Kenneth Lamb*/
+
+body
+{
+	background-image: linear-gradient(#E8B0F0, #9CDDE3);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+}
+
+h1, h2
+{
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	text-align: center;
+	text-transform: uppercase;
+}
+
+div
+{
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	border:thin;
+	border-style: dotted;
+	box-shadow: 5px 5px 5px
+
+}
+
+span
+{
+	text-shadow: 5px 5px 5px #666FFF;
+}
+
+
+#header
+{
+	font-size: 50pt;
+	font-weight: bold;
+	color: #0495AC;
+}
+
+.footer
+{
+	font-size: 26pt;
+	color: #6666FF;
+	background-color: #004354;
+	font-weight: bold;
+}
+
+.pageFormat
+{
+	font-size: 18pt;
+	color: #3300CC;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+mark
+{
+	background-color:aqua
+}

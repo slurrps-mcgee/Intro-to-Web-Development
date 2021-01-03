@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+
+<link type="text/css" rel="stylesheet" href="CarSales.css" />
+
+</head>
+
+<body>
+	<div align="center">
+		<h1>DC & H Car Sales</h1>
+	</div>
+
+	<br/>
+	<br/>
+
+	<div align="center">
+		<p>Welcome to DC & H, (Dewey, Cheatum, & Howe), Car Sales. We sell "gently used" automobiles. Our cars feature the famous DC & H "Tail light" warranty where all our cars are fully guaranteed until your tail lights can no longer be seen from the dealership...</p>
+	</div>
+
+	<div>
+		<p>Please take a look at out list of current inventory</p>
+
+		<ol>
+			<li>Tesla: Model S $35,000</li>
+			<li>Toyota: Prius Prime $27,750</li>
+			<li>Chevrolet: Corvette $55,000</li>
+
+		</ol>
+	</div>
+
+	<div align="center">
+		<button class="button" onclick="BuyaCar()">I would like to buy a car</button>
+	</div>
+	
+	
+	
+<script>
+	// JavaScript Document
+function BuyaCar()
+{
+	//Declare Variables
+		var RETURNING_CUSTOMER = .1;
+		var SUN_ROOF = 300;
+		var TAX_RATE = .07;
+
+		var tradeIn;
+		var carYear;
+		var carCondition;
+		var option;
+		
+
+		var returnCust;
+		var sunRoofOption;
+
+		var tradeInValue=0;
+		var carPrice=0;
+		var CarReductionPrice=0;
+		var sunRoofPrice=0;
+		var reduction=0;
+		var subtotal=0;
+		var tax=0;
+		
+
+
+		option = window.prompt("Please select the cars number on the list provided (1, 2, 3)");
+		
+
+		if (option == '1')
+			{
+				carPrice = 35000;
+			}
+		else if (option == '2')
+			{
+				carPrice = 27750;
+			}
+		else
+			{
+				carPrice = 55000;
+			}
+	
+	
+		tradeIn = window.prompt("Do you have a trade in vehicle? (yes, no)", "no");
+
+		if(tradeIn == "yes")
+
+			{
+				carYear = window.prompt("What is the car Year?");
+				
+
+				if (carYear >= 2018)
+					{
+						carCondition = window.prompt("What is the cars condition? (best, good, poor)", "poor");
+						if(carCondition == "best")
+							{
+								tradeInValue = 5000;
+							}
+						else if (carCondition == "good")
+							{
+								tradeInValue = 3000;
+							}
+						else
+							{
+								tradeInValue = 1000;
+							}
+					}
+				else if (carYear >= 2005 && carYear <= 2017)
+					{
+						carCondition = window.prompt("What is the cars condition? (best, good, poor)", "poor");
+						if(carCondition == "best")
+							{
+								tradeInValue = 3000;
+							}
+						else if (carCondition == "good")
+							{
+								tradeInValue = 1000;
+							}
+						else
+							{
+								tradeInValue = 500;
+							}
+					}
+				else
+				{
+					document.write("Sorry we cannot accept a car this old as a trade in.")
+					tradeInValue = 0;
+				}
+			}
+			
+
+		sunRoofOption = window.prompt("Would you like a sun roof? (yes, no)", "no")
+
+		if (sunRoofOption == "yes")
+			{
+				returnCust = window.prompt("Are you a returning customer? (yes, no)", "no")
+				if(returnCust == "yes")
+					{
+						sunRoofPrice = carPrice + SUN_ROOF;
+						carPrice = sunRoofPrice - tradeInValue;
+						reduction = carPrice * RETURNING_CUSTOMER;
+						CarReductionPrice = carPrice - reduction;
+						tax = CarReductionPrice * TAX_RATE;
+						subtotal = CarReductionPrice + tax;
+
+						document.write("Congratulations, thank you for choosing DC & H Car Sales <br/>")
+						document.write("With the included Sun Roof your price is $" + carPrice + "<br/>")
+						document.write("With your returning customer discount that comes to $" + CarReductionPrice + "<br/>")
+						document.write("You saved $" + reduction + "<br/>")
+						document.write("Your subtotal is $" + subtotal)
+
+					}
+				else
+					{
+						carPrice = carPrice + SUN_ROOF - tradeInValue;
+						tax = carPrice * TAX_RATE;
+						subtotal = carPrice + tax;
+
+						document.write("Congratulations, thank you for choosing DC & H Car Sales <br/>")
+						document.write("With the included Sun Roof your price is $" + carPrice + "<br/>")
+						document.write("This does not include a returning customer discount.<br/>")
+						document.write("Your subtotal is $" + subtotal)
+					}
+			}
+		else
+			{
+				returnCust = window.prompt("Are you a returning customer? (yes, no)", "no")
+				if(returnCust == "yes")
+					{
+						
+						carPrice = carPrice - tradeInValue;
+						reduction = carPrice * RETURNING_CUSTOMER;
+						CarReductionPrice = carPrice - reduction;
+						tax = carPrice * TAX_RATE;
+						subtotal = carPrice + tax;
+
+						document.write("Congratulations, thank you for choosing DC & H Car Sales <br/>")
+						document.write("You have chosen not to include a sun roof<br/>")
+						document.write("With your returning customer discount that comes to $" + CarReductionPrice + "<br/>")
+						document.write("You saved $" + reduction + "<br/>")
+						document.write("Your subtotal is $" + subtotal)
+
+					}
+				else
+					{
+						carPrice = carPrice - tradeInValue;
+						tax = carPrice * TAX_RATE;
+						subtotal = carPrice + tax;
+
+						document.write("Congratulations, thank you for choosing DC & H Car Sales <br/>")
+						document.write("You have chosen not to include the sun roof. <br/>")
+						document.write("This does not include a returning customer discount.<br/>")
+						document.write("Your subtotal is $" + subtotal)
+					}
+			}
+}
+
+	
+	
+	
+</script>
+
+
+
+</body>
+</html>

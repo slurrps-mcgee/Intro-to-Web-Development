@@ -1,0 +1,87 @@
+<!doctype html>
+
+<html>
+
+   <!--	YOUR NAME HERE -->
+
+<head>
+
+	<title>Add an appropriate title</title>
+
+	<!--  This links to our external JavaScript -->
+	<!--  That generates a 'random' number -->
+	<script src="tooRandNum.js"></script>
+	
+	<link href="guessFormat.css" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body>
+
+<!--  Add code to put large title at top of web page -->
+<div align="center">
+<h1>A Fun Guessing Game</h1>
+</div>
+<!--  Add code to introduce purpose of this program -->
+<p>This program is a basic guessing game. The computer creates a number between 1 and 4 and asks you to guess the secret number.</p>
+
+
+<script language="JavaScript">
+
+// Declare Variables
+
+
+var intMysteryNum = CalculateMysteryNumber();  // creates the mystery number the user is to guess
+
+
+// declare other variables needed
+	
+				// A user's guess as a text
+	var usersGuess;
+				// A user's guess as an int 
+	var intNumber;
+
+
+  //  Add JavaScript code to prompt user for their guess,
+  //  being sure to remind them the value should be between 1 and 4:
+	usersGuess= window.prompt("Please enter in a guess between 1 and 4");
+
+	document.write("<br/>")
+	
+  //  Convert the string value the user entered into an integer:
+  intNumber = parseInt(usersGuess);
+	
+	  //  Print to the screen the value the user guessed:
+	document.write("You guessed the secret number was " + intNumber);
+	
+	document.write("<br/>")
+	document.write("<br/>")
+	
+  //  Add JavaScript code which determines if the user's guess
+  //  was correct, too big, or too small and prints an appropriate
+  //  message in each case.  If the guess was not correct, we should
+  //  tell the user what the mystery number was.  I'd 'guess' some
+  //  sort of branching structure would be best here!?  Perhaps an
+  //  if statement or if ... else statement? (hint, hint)
+	if(intNumber == intMysteryNum)
+		document.write("You guessed correct the mystery number was " + intMysteryNum);
+	else if(intNumber < intMysteryNum)
+		document.write("Your guess was too small, the correct number was " +  intMysteryNum);
+	else if(intNumber > intMysteryNum)
+		document.write("Your guess was too large, the correct number was " + intMysteryNum);
+	
+	  // Leave this alone:
+  var strChoice = window.prompt("Play again?","yes");
+
+  if(strChoice=="yes")
+	 window.location.reload();
+	
+</script>
+
+<br /><br />
+
+<h3><a href="guessgame.html">Press to play again!</a></h3>
+
+</body>
+</html>
